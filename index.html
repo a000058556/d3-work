@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Web Fundamentals Workshop</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<!-- <a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a> -->
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>CAI YI-CHENG</h1>
+									<p>D3.js練習一覽</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h2>Work</h2>
+								</header>
+								<p style="margin-bottom: 0px;">
+									D3.js練習
+								</p>
+								<hr/>
+								<section>
+									<div class="row">
+										<!-- 長條圖 -->
+										<div href="#" class="col-4 col-6-medium col-12-small image fit">
+											<div class="bar-chart"></div>
+											<div class="controls">
+												<button class="bar-btn" data-name="revenue" style="width: 33%;">Revenue</button>
+												<button class="bar-btn" data-name="budget" style="width: 33%;">Budget</button>
+												<button class="bar-btn" data-name="popularity" style="width: 33%;">Popularity</button>
+											</div>
+									
+											<div class="tooltip">
+												<div class="tip-header">
+													<h3></h3>
+													<h4></h4>
+													<img>
+													<div class="tip-body"></div>
+												</div>
+											</div>										
+										</div>
+
+										<hr class="image fit"></hr>
+
+										<!-- 分布圖 -->
+										<div class="scatter-chart "></div>
+										<!-- 選取顯示內容 -->
+										<div class="selected-container ">
+											<div class="selected-header">Selected Element</div>
+											<div class="selected-body"></div>
+										</div>
+
+										<hr class="image fit"></hr>
+
+										<!-- 折線圖 -->
+										<div class="col-4 col-6-medium col-12-small image fit">
+											<div class="line-chart"></div>
+										</div>
+
+										<hr class="image fit"></hr>
+										
+										<!-- promise管理 -->
+										<div class="col-4 col-6-medium col-12-small image fit">
+											<h3 class="Header" style="font-size: 20pt; color: #777777;">點擊獲取圖片</h3>
+											<span id="add-up"></span>
+											<div style="align-items: center ;">
+														<img id="image1" style="width: 33%; height: 400px; display: inline;">
+														<img id="image2" style="width: 33%; height: 400px; display: inline;">
+														<img id="image3" style="width: 33%; height: 400px; display: inline;">
+											</div>
+											<button id="go-add-up" style="width: 100%;">GO!</button> 
+										</div>
+
+										<hr class="image fit"></hr>
+
+										<!-- 資料更新 -->
+										<div class="col-4 col-6-medium col-12-small image fit">
+											<h3 class="Header" style="font-size: 20pt; color: #777777;">喜好清單</h3>
+											<div class="general-update-container">
+												<svg width="150" height="200"></svg>
+											</div>
+											<div class="controls" style="width: 100%;">
+												<button class="john" data-name="john" style="width: 33%;">John</button>
+												<button class="marry" data-name="marry" style="width: 33%;">Marry</button>
+												<button class="ryan" data-name="ryan" style="width: 33%;">Ryan</button>
+											</div>
+										</div>
+										<!-- <div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+										</div> -->
+									</div>
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<form action="#" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; dbse25-19.</li><li>CAI YI-CHENG</li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="//unpkg.com/d3"></script>
+			
+			<script src="assets/js/main-scatter-chart.js"></script>
+			<script src="assets/js/main-bar-chart.js"></script>
+			<script src="assets/js/main-line-chart.js"></script>
+			<script src="assets/js/main-promise.js"></script>
+			<script src="assets/js/ent-up-dl.js"></script>
+
+
+	</body>
+</html>
